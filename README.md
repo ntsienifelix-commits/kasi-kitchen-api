@@ -2,6 +2,35 @@
 
 A REST API for South African dishes and provinces, built with Node.js and Express.
 
+PROBLEM: No API for SA kasi food and cultural reasure
+
+  ## Purpose
+We are not building a food list We are building a digital preservation layer for SA township food culture to make it usable by tech
+-Cultural Preservation - Digitally preserves South African Township Kasi food heritage and traditional cooking knowledge that is mostly passed orally
+-
+-Promotes Local Tourism- Helps tourists discover authentic local dishes per province example Mopane worms in  Limpopo before visiting
+-
+-Supports Small Businesses- Kasi restaurants , street vendors and local chefs can integrate the API into their apps and menus to reach more customers
+-
+-Educational Resources- Useful for students , research and food bloggers local and international to learn about South African cuisine and regional food differences
+-
+-Foundation for Bigger Apps-  This API can power a mobile app , website , or food delivery platform for Kasi food
+-
+-Showcases South African Diversity - 1 Country with 9 Provinces has different traditional foods the API  organizes this diversity in one place
+-
+-Digital Inclusion - Brings township culture into the tech space  which is highly dominated by Western food data
+-
+## Target Market
+-SA student developers in bootcamps because they are the easiest to reach 
+They star GitHub repos and who add real vendors
+-
+-Kasi restaurant owners and street vendors
+-
+-App developers building food apps
+-
+-Students and researchers
+-
+
 ## Requirements
 
 - Node.js 18 or newer
@@ -109,6 +138,13 @@ The default port is `5000`. To use another port in PowerShell for the current se
 $env:PORT=5001
 npm.cmd run devStart
 ```
+
+## Future Improvements
+-Add POST to add new dishes
+-Add images for each dish
+-Add ratings or reviews
+-Add MongoDB database
+-Deploy to Render and ercel
 
 ## Developers
 
