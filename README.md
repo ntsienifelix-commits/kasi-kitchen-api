@@ -113,4 +113,4 @@ npm.cmd run devStart
 ## Developers
 
 - Boitshepo: https://github.com/Boitshepo-glitch
-- Khanya: https://github.com/Khanyamthethwa-glitch
+- Felix: https://github.com/ntsienifelix-commits
