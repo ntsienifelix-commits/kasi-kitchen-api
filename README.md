@@ -35,3 +35,27 @@ npm install
 echo "PORT=5000" > .env
 npm run dev
 # http://localhost:5000
+
+
+🚀 *LIVE API:* https://kasi-kitchen-api.onrender.com/
+
+## Endpoints to Test
+- GET / - Home: https://kasi-kitchen-api.onrender.com/
+- GET /api/dish - All dishes: https://kasi-kitchen-api.onrender.com/api/menu
+- GET /api/menu/1 - Single item: https://kasi-kitchen-api.onrender.com/api/dish/1
+- GET /api/provinces - Orders: https://kasi-kitchen-api.onrender.com/api/provinces
+- GET /health - Health: https://kasi-kitchen-api.onrender.com/health
+
+## GitHub Repo
+https://github.com/ntsienifelix-commits/kasi-kitchen-api
+
+## Tech Stack
+- Node.js + Express
+- Deployed on Render.com
+
+## Developer
+Felix Ntsieni
+Student Project - Kasi Kitchen API
+
+---
+⚠️ Note: Free tier on Render sleeps after 15 mins. First request may take 30s to wake up. Please refresh.
