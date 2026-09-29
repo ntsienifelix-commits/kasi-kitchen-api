@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Kasi Kitchen API documentation for South African dishes and provinces.">
+  <title>Kasi Kitchen API</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <main class="container">
+    <section class="hero">
+      <div class="brand">
+        <div class="logo-mark" aria-hidden="true">KK</div>
+        <div>
+          <strong>Kasi Kitchen</strong>
+          <span>Taste of home &middot; API</span>
+        </div>
+      </div>
+      <p class="eyebrow">Frontend eye &middot; Backend craft</p>
+      <h1>Kasi <em>Kitchen</em></h1>
+      <p class="intro">A digital table for the vibrant, soulful world of Kasi food. Explore dishes, provinces, and the stories behind South African food culture.</p>
+      <div class="status"><span></span> API online</div>
+    </section>
+
+    <section class="section">
+      <div class="section-heading">
+        <p class="eyebrow">Start exploring</p>
+        <h2>API endpoints</h2>
+        <p>Every route is clickable and returns JSON except this documentation page.</p>
+      </div>
+      <div class="endpoints">
+        <a href="/api/dishes"><b>GET</b><code>/api/dishes</code><span>Browse every dish</span></a>
+        <a href="/api/dishes/3"><b>GET</b><code>/api/dishes/:id</code><span>Find a dish by id</span></a>
+        <a href="/api/dishes/random"><b>GET</b><code>/api/dishes/random</code><span>Pick a random dish</span></a>
+        <a href="/api/about"><b>GET</b><code>/api/about</code><span>Meet the project team</span></a>
+        <a href="/api/dishes/province/Gauteng"><b>GET</b><code>/api/dishes/province/:province</code><span>Filter by province</span></a>
+        <a href="/api/provinces"><b>GET</b><code>/api/provinces</code><span>Browse provinces</span></a>
+        <a href="/api/provinces/1"><b>GET</b><code>/api/provinces/:id</code><span>Find a province</span></a>
+        <a href="/api/provinces/1/dishes"><b>GET</b><code>/api/provinces/:id/dishes</code><span>See local dishes</span></a>
+      </div>
+    </section>
+
+    <section class="section team-section">
+      <div class="section-heading">
+        <p class="eyebrow">Built together</p>
+        <h2>The developers</h2>
+      </div>
+      <div class="team">
+        <article><h3>Boitshepo</h3><p>Backend Developer</p><a href="https://github.com/boitsheporamaswe-glitch" target="_blank" rel="noreferrer">GitHub profile &rarr;</a></article>
+        <article><h3>Felix</h3><p>Backend Developer</p><a href="https://github.com/ntsienifelix-commits" target="_blank" rel="noreferrer">GitHub profile &rarr;</a></article>
+      </div>
+    </section>
+
+    <footer>Node.js &middot; Express &middot; REST API &middot; Nodemon</footer>
+  </main>
+</body>
+</html>
