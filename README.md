@@ -42,7 +42,7 @@ npm run dev
 ## Endpoints to Test
 - GET / - Home: https://kasi-kitchen-api.onrender.com/
 - GET /api/dish - All dishes: https://kasi-kitchen-api.onrender.com/api/menu
-- GET /api/menu/1 - Single item: https://kasi-kitchen-api.onrender.com/api/dish/1
+- GET /api/dish/1 - Single item: https://kasi-kitchen-api.onrender.com/api/dish/1
 - GET /api/provinces - Orders: https://kasi-kitchen-api.onrender.com/api/provinces
 - GET /health - Health: https://kasi-kitchen-api.onrender.com/health
 
