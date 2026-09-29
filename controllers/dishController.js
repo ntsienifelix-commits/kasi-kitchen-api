@@ -2,7 +2,19 @@ const dishes = require('../data/dishes');
 
 const getAllDishes = (req, res) => {
   let results = [...dishes];
-  const { sort, limit } = req.query;
+  const { search, sort, limit } = req.query;
+
+  if (search) {
+
+  const term = search.toLowerCase();
+
+  results = results.filter(dish =>
+
+    dish.name.toLowerCase().includes(term)
+
+  );
+
+}
 
   if (sort) {
     results.sort((a, b) => {
