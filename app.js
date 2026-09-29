@@ -5,6 +5,29 @@ const app = express();
 
 app.use(express.json());
 
+// Health check - to know if API is live
+app.get('/health', (req, res) => {
+  res.status(200).json({
+    status: 'ok',
+    uptime: process.uptime(),
+    timestamp: new Date(),
+    message: 'Kasi Kitchen API is running on Render 🔥'
+  });
+});
+
+app.get('/', (req, res) => {
+  res.json({
+    message: 'Welcome to Kasi Kitchen API',
+    live_link: 'https://kasi-kitchen-api.onrender.com/',
+    endpoints: [
+      'GET /health',
+      'GET /api/menu',
+      'GET /api/menu/:id',
+      'GET /api/orders'
+    ]
+  });
+});
+
 // 1. Serve the HTML/CSS from public folder
 app.use(express.static(path.join(__dirname, 'public')));
 
