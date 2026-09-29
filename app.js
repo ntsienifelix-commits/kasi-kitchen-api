@@ -20,5 +20,42 @@ app.get('/api', (req, res) => {
   res.json({ msg: 'Kasi Kitchen API running' });
 });
 
-const PORT = 5000;
-app.listen(PORT, () => console.log(`Server running http://localhost:${PORT}`));
+app.get('/api/about', (req, res) => {
+
+  res.json({
+
+    project: "Kasi Kitchen API",
+
+    description: "An API for exploring South African dishes and their provinces.",
+
+    version: "1.0.0",
+
+    developers: [
+
+      {
+
+        name: "Boitshepo",
+
+        role: "Backend Developer",
+
+        github: "https://github.com/boitsheporamaswe-glitch"
+
+      },
+
+      {
+
+        name: "Felix",
+
+        role: "Backend Developer",
+
+        github: "https://github.com/ntsienifelix-commits"
+
+      }
+
+    ]
+
+  });
+
+});
+
+module.exports = app;
