@@ -1,8 +1,9 @@
 const express = require('express');
-const { getAllProvinces, getProvinceByName } = require('../controllers/provinceControllers');
 const router = express.Router();
+const { getAllProvinces, getProvinceById, getDishesByProvinceId } = require('../controllers/provinceControllers');
 
-router.get("/", getAllProvinces);
-router.get("/:name", getProvinceByName);
+router.get('/', getAllProvinces);
+router.get('/:id/dishes', getDishesByProvinceId);
+router.get('/:id', getProvinceById);
 
 module.exports = router;
